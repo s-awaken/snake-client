@@ -11,21 +11,21 @@ const setupInput = function(conn) {
   
   const handleUserInput = stdin.on('data', (key)=>{
     if (key === 'w') {
-      conn.write("Move: up");
+      connection.write("Move: up");
     } else if (key === 's') {
-      conn.write("Move: down");
+      connection.write("Move: down");
     }
     if (key === 'a') {
-      conn.write("Move: left");
+      connection.write("Move: left");
     } else if (key === 'd') {
-      conn.write("Move: right");
+      connection.write("Move: right");
     }
 
     if (key === '\u0003') {
       process.exit();
     }
     if (key === 'm') {
-      conn.write('Say: hello');
+      connection.write('Say: hello');
     }
   });
   
