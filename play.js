@@ -7,6 +7,7 @@ const connect = function() {
   });
 
   conn.setEncoding('utf8');
+
   conn.on('connect', ()=>{
     console.log('Connection Established');
   });
@@ -16,5 +17,5 @@ const connect = function() {
   return conn;
 };
 
-console.log('Connecting ...');
-connect();
+
+module.exports = connect;
