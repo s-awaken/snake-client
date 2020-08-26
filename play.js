@@ -7,7 +7,7 @@ const connect = function() {
   });
 
   conn.setEncoding('utf8');
-  conn.on('connect', (data)=>{
+  conn.on('connect', ()=>{
     console.log('Connection Established');
   });
   conn.on('data', (data)=> {
