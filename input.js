@@ -25,7 +25,7 @@ const setupInput = function(conn) {
       process.exit();
     }
     if (key === 'm') {
-      connection.write('Say: hello');
+      connection.write(`Say: ${key}`);
     }
   });
   
