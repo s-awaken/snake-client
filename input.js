@@ -20,9 +20,12 @@ const setupInput = function(conn) {
     } else if (key === 'd') {
       conn.write("Move: right");
     }
-    
+
     if (key === '\u0003') {
       process.exit();
+    }
+    if (key === 'm') {
+      conn.write('Say: hello');
     }
   });
   
